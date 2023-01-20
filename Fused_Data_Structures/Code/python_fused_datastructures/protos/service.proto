@@ -1,0 +1,148 @@
+syntax = "proto3";
+
+// Communication to structures on a primary node
+service PrimaryDataStructure {
+    // A request for the creation of a new primary data structure
+    rpc CreatePrimaryStructure(CreatePrimaryStructureRequest) returns (CreatePrimaryStructureResponse) {}
+
+    // A request for a value stored in a primary data structure
+    rpc GetValue(ValueRequest) returns (ValueResponse) {}
+
+    // A request for a value stored in a primary data structure
+    rpc GetAllValues(AllValuesRequest) returns (AllValuesResponse) {}
+
+    // Mutations to a primary data structure
+    rpc MutationStream(StructureMutation) returns (StructureMutation) {}
+}
+
+// Communication to structures on a backup node
+service FusedDataStructure {
+    // A request for the creation of a new fused data structure
+    rpc CreateFusedStructure(CreateFusedStructureRequest) returns (CreateFusedStructureResponse) {}
+
+    // Mutations to a fused data structure
+    rpc MutationStream(StructureMutation) returns (StructureMutation) {}
+
+    // A request for all data stored that is used in recovery
+    rpc GetFusedRecoveryData(FusedRecoveryDataRequest) returns (FusedRecoveryDataResponse) {}
+}
+
+/* ---------- CreatePrimaryStructure messages ----------- */
+message CreatePrimaryStructureRequest {
+    StructureType type = 1;
+    repeated int32 backupPorts = 2;
+    string clusterIdentifier = 3;
+    int32 numberOfPrimaries = 4;
+    int32 numberOfFaults = 5;
+}
+
+message CreatePrimaryStructureResponse {
+    string structureIdentifier = 1;
+}
+
+/* ---------- CreateFusedStructure messages ----------- */
+message CreateFusedStructureRequest {
+    StructureType type = 1;
+    string primaryStructureIdentifier = 2;
+    string clusterIdentifier = 3;
+    int32 numberOfPrimaries = 4;
+    int32 numberOfFaults = 5;
+    int32 backupCodePosition = 6;
+}
+
+message CreateFusedStructureResponse {
+    string structureIdentifier = 1;
+}
+
+/* ---------- GetValue messages ----------- */
+message ValueRequest {
+    string structureIdentifier = 1;
+    string key = 2;
+}
+
+message ValueResponse {
+    int32 value = 1;
+}
+
+/* ---------- GetAllValues messages ----------- */
+message AllValuesRequest {
+    string structureIdentifier = 1;
+}
+
+message AllValuesResponse {
+    map<int32, int32> values = 1;
+}
+
+/* ---------- StructureMutation messages ----------- */
+message StructureMutation {
+    string structureIdentifier = 1;
+
+    oneof event {
+        AddValuePayload addValuePayload = 2;
+        RemoveValuePayload removeValuePayload = 3;
+        FusedAddValuePayload fusedAddValuePayload = 4;
+        FusedRemoveValuePayload fusedRemoveValuePayload = 5;
+    }
+
+    string clusterIdentifier = 6;
+}
+
+
+/* ---------- GetFusedRecoveryData messages ----------- */
+message FusedRecoveryDataRequest {
+    string clusterIdentifier = 5;
+}
+
+message FusedRecoveryDataResponse {
+    repeated int32 fusedData = 1;
+    repeated FusedIndexPayload indexData = 2;
+}
+
+message FusedIndexPayload {
+    repeated int32 fusedDataIndexes = 1;
+}
+
+
+// Payload for adding a value to a list or map:
+//   - if the structure is a map, `value` should be inserted at key `index`
+//   - if the structure is a list, `value` should be inserted at position `index`
+//   - if the structure is a queue, `value` should be inserted at the end of the queue
+message AddValuePayload {
+    int32 index = 1;
+    int32 value = 2; 
+}
+
+// Payload for removing a value from a list or map:
+//   - if the structure is a map, the value at key `index` should be removed
+//   - if the structure is a list, the value at position `index` should be removed
+//   - if the structure is a queue, the value at the start of queue should be removed
+message RemoveValuePayload {
+    int32 index = 1;
+}
+
+
+// Payload for removing a value from a fused list or fused map:
+//   - if the structure is a map, `value` should be inserted/updated at key `index`
+//   - if the structure is a list, `value` should be inserted at position `index`
+message FusedAddValuePayload {
+    int32 index = 1;
+    int32 value = 2;
+    optional int32 oldValue = 3;
+}
+
+
+// Payload for removing a value from a fused list or fused map:
+//   - if the structure is a map, the value at key `index` should be removed
+//   - if the structure is a list, the value at position `index` should be removed
+message FusedRemoveValuePayload {
+    int32 index = 1;
+    int32 value = 2;
+    int32 valueToReplaceWith = 3;
+}
+
+enum StructureType {
+    UNKNOWN = 0;
+    LIST = 1;
+    MAP = 2;
+    QUEUE = 3;
+}

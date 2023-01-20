@@ -1,0 +1,199 @@
+Starting nodes...
+Primary ports: [50000, 50001, 50002]
+Backup ports: [50003, 50004, 50005]
+
+Creating fault tolerant map cluster with identifier: e0669c61-f38d-4803-8fed-55a1b12b9c7b
+Initializing primary map on primary node on port: 50000
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary map on primary node on port: 50001
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary map on primary node on port: 50002
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Creating fault tolerant map cluster with identifier: 295d4565-04ee-4839-b58c-8a2c4a6b9674
+Initializing primary map on primary node on port: 50000
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary map on primary node on port: 50001
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary map on primary node on port: 50002
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Primary node received mutation for structure 0e48af02-6959-4328-a06f-2d1477e86d2f in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=123
+
+Primary node sending mutation to backup servers for primary structure identifier 0e48af02-6959-4328-a06f-2d1477e86d2f:
+Event=set, Key=0, Value=123
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=123
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=123
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=123
+
+Primary node received mutation for structure 0e48af02-6959-4328-a06f-2d1477e86d2f in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=1, Value=456
+
+Primary node sending mutation to backup servers for primary structure identifier 0e48af02-6959-4328-a06f-2d1477e86d2f:
+Event=set, Key=1, Value=456
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=1, Value=456
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=1, Value=456
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=1, Value=456
+
+Primary node received mutation for structure 214234cc-d5f2-49f2-84b3-44bf9562e26a in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=456
+
+Primary node sending mutation to backup servers for primary structure identifier 214234cc-d5f2-49f2-84b3-44bf9562e26a:
+Event=set, Key=0, Value=456
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=456
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=456
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=456
+
+Primary node received mutation for structure cd1a393f-24d0-426e-ad84-c210f5ee1393 in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=789
+
+Primary node sending mutation to backup servers for primary structure identifier cd1a393f-24d0-426e-ad84-c210f5ee1393:
+Event=set, Key=0, Value=789
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=789
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=789
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=789
+
+Primary node received mutation for structure 214234cc-d5f2-49f2-84b3-44bf9562e26a in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=555
+
+Primary node sending mutation to backup servers for primary structure identifier 214234cc-d5f2-49f2-84b3-44bf9562e26a:
+Event=set, Key=0, Value=555, OldValue=456
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=555
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=555
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure 214234cc-d5f2-49f2-84b3-44bf9562e26a within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=0, Value=555
+
+Primary node received mutation for structure 0e48af02-6959-4328-a06f-2d1477e86d2f in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=2, Value=789
+
+Primary node sending mutation to backup servers for primary structure identifier 0e48af02-6959-4328-a06f-2d1477e86d2f:
+Event=set, Key=2, Value=789
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=2, Value=789
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=2, Value=789
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure 0e48af02-6959-4328-a06f-2d1477e86d2f within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=set, Key=2, Value=789
+
+Primary node received mutation for structure fb0c6ccf-e7de-4447-b09a-4de8a2437309 in cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=111
+
+Primary node sending mutation to backup servers for primary structure identifier fb0c6ccf-e7de-4447-b09a-4de8a2437309:
+Event=set, Key=0, Value=111
+
+Backup node received mutation for structure 250ec5f7-d09d-4a64-b472-1d6cba6de0db from primary structure fb0c6ccf-e7de-4447-b09a-4de8a2437309 within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=111
+
+Backup node received mutation for structure 8e5e16f1-c6d5-436a-9521-a696ffeccea3 from primary structure fb0c6ccf-e7de-4447-b09a-4de8a2437309 within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=111
+
+Backup node received mutation for structure 4e777acc-1fd5-4027-a260-38a053b9ad32 from primary structure fb0c6ccf-e7de-4447-b09a-4de8a2437309 within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=111
+
+Primary node received mutation for structure b606d892-2b50-471c-b110-42e561406b0e in cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=222
+
+Primary node sending mutation to backup servers for primary structure identifier b606d892-2b50-471c-b110-42e561406b0e:
+Event=set, Key=0, Value=222
+
+Backup node received mutation for structure 250ec5f7-d09d-4a64-b472-1d6cba6de0db from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=222
+
+Backup node received mutation for structure 8e5e16f1-c6d5-436a-9521-a696ffeccea3 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=222
+
+Backup node received mutation for structure 4e777acc-1fd5-4027-a260-38a053b9ad32 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=0, Value=222
+
+Primary node received mutation for structure b606d892-2b50-471c-b110-42e561406b0e in cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=1, Value=333
+
+Primary node sending mutation to backup servers for primary structure identifier b606d892-2b50-471c-b110-42e561406b0e:
+Event=set, Key=1, Value=333
+
+Backup node received mutation for structure 250ec5f7-d09d-4a64-b472-1d6cba6de0db from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=1, Value=333
+
+Backup node received mutation for structure 8e5e16f1-c6d5-436a-9521-a696ffeccea3 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=1, Value=333
+
+Backup node received mutation for structure 4e777acc-1fd5-4027-a260-38a053b9ad32 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=set, Key=1, Value=333
+
+Retrieved value for map cluster `1`, primary map `0` at index `0`: 123
+
+Retrieved value for map cluster `1`, primary map `0` at index `1`: 456
+
+Retrieved value for map cluster `1`, primary map `0` at index `2`: 789
+
+Attempting to recreate original data for 3 faults on data points: {0, 1, 2}
+Available primary data: {'0e48af02-6959-4328-a06f-2d1477e86d2f': None, '214234cc-d5f2-49f2-84b3-44bf9562e26a': None, 'cd1a393f-24d0-426e-ad84-c210f5ee1393': None}
+Available auxiliary data: [[0, 0, 0], [1, -1, -1], [2, -1, -1]]
+Available RS-encoded data: [(325, 456, 789), (49797, 456, 789), (698, 456, 789)]
+
+Maps which were restored:
+Primary structure `0` with structure identifier `0e48af02-6959-4328-a06f-2d1477e86d2f` was recovered: {0: 123, 1: 456, 2: 789}
+Primary structure `1` with structure identifier `214234cc-d5f2-49f2-84b3-44bf9562e26a` was recovered: {0: 555}
+Primary structure `2` with structure identifier `cd1a393f-24d0-426e-ad84-c210f5ee1393` was recovered: {0: 789}
+Primary node received mutation for structure cd1a393f-24d0-426e-ad84-c210f5ee1393 in cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=remove, Key=0
+
+Primary node sending mutation to backup servers for primary structure identifier cd1a393f-24d0-426e-ad84-c210f5ee1393:
+Event=remove, Key=0, Value=None, ValueToReplaceWith=None
+
+Backup node received mutation for structure 91a7cbff-d6e3-414b-849e-d266d63e5235 from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=remove, Key=0, Value=0, ValueToReplaceWith=0
+
+Backup node received mutation for structure a41ac885-e80d-4731-a573-0fb543147309 from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=remove, Key=0, Value=0, ValueToReplaceWith=0
+
+Backup node received mutation for structure b602e9a0-9886-4f63-95c3-0a5543f5202c from primary structure cd1a393f-24d0-426e-ad84-c210f5ee1393 within cluster e0669c61-f38d-4803-8fed-55a1b12b9c7b:
+Event=remove, Key=0, Value=0, ValueToReplaceWith=0
+
+Primary node received mutation for structure b606d892-2b50-471c-b110-42e561406b0e in cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=remove, Key=1
+
+Primary node sending mutation to backup servers for primary structure identifier b606d892-2b50-471c-b110-42e561406b0e:
+Event=remove, Key=1, Value=None, ValueToReplaceWith=None
+
+Backup node received mutation for structure 250ec5f7-d09d-4a64-b472-1d6cba6de0db from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=remove, Key=1, Value=0, ValueToReplaceWith=0
+
+Backup node received mutation for structure 8e5e16f1-c6d5-436a-9521-a696ffeccea3 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=remove, Key=1, Value=0, ValueToReplaceWith=0
+
+Backup node received mutation for structure 4e777acc-1fd5-4027-a260-38a053b9ad32 from primary structure b606d892-2b50-471c-b110-42e561406b0e within cluster 295d4565-04ee-4839-b58c-8a2c4a6b9674:
+Event=remove, Key=1, Value=0, ValueToReplaceWith=0
+
+Stopping nodes...

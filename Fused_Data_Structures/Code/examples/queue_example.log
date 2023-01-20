@@ -1,0 +1,85 @@
+Starting nodes...
+Primary ports: [50000, 50001, 50002]
+Backup ports: [50003, 50004, 50005]
+
+Creating fault tolerant queue cluster with identifier: ef3e1862-972c-4b85-a9f4-8475bad1c3e5
+Initializing primary queue on primary node on port: 50000
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary queue on primary node on port: 50001
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary queue on primary node on port: 50002
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Primary node received mutation for structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 in cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=5
+
+Primary node sending mutation to backup servers for primary structure identifier 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9:
+Event=enqueue, Value=5
+
+Backup node received mutation for structure 7d6be284-0d61-4f0e-bef1-e1f37305c632 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=5
+
+Backup node received mutation for structure b476769a-5998-485b-ae58-1f4a2cc95e57 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=5
+
+Backup node received mutation for structure 0ceeda36-13fe-4f4a-b501-c2f30776ad51 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=5
+
+Primary node received mutation for structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 in cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=6
+
+Primary node sending mutation to backup servers for primary structure identifier 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9:
+Event=enqueue, Value=6
+
+Backup node received mutation for structure 7d6be284-0d61-4f0e-bef1-e1f37305c632 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=6
+
+Backup node received mutation for structure b476769a-5998-485b-ae58-1f4a2cc95e57 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=6
+
+Backup node received mutation for structure 0ceeda36-13fe-4f4a-b501-c2f30776ad51 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=6
+
+Primary node received mutation for structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 in cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=7
+
+Primary node sending mutation to backup servers for primary structure identifier 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9:
+Event=enqueue, Value=7
+
+Backup node received mutation for structure 7d6be284-0d61-4f0e-bef1-e1f37305c632 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=7
+
+Backup node received mutation for structure b476769a-5998-485b-ae58-1f4a2cc95e57 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=7
+
+Backup node received mutation for structure 0ceeda36-13fe-4f4a-b501-c2f30776ad51 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=enqueue, Value=7
+
+Front of queue: 5
+Primary node received mutation for structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 in cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=dequeue
+
+Primary node sending mutation to backup servers for primary structure identifier 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9:
+Event=dequeue, Value=5, ValueToReplaceWith=7
+
+Backup node received mutation for structure 7d6be284-0d61-4f0e-bef1-e1f37305c632 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=dequeue, Value=5, ValueToReplaceWith=7
+
+Backup node received mutation for structure b476769a-5998-485b-ae58-1f4a2cc95e57 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=dequeue, Value=5, ValueToReplaceWith=7
+
+Backup node received mutation for structure 0ceeda36-13fe-4f4a-b501-c2f30776ad51 from primary structure 3c7e4dee-ef07-4589-ada4-7cfdcdabddd9 within cluster ef3e1862-972c-4b85-a9f4-8475bad1c3e5:
+Event=dequeue, Value=5, ValueToReplaceWith=7
+
+Front of queue: 6
+Attempting to recreate original data for 3 faults on data points: {0, 1, 2}
+Available primary data: {'3c7e4dee-ef07-4589-ada4-7cfdcdabddd9': [], '5dbc0076-2c9e-44da-9b59-c3c0eaed2a21': [], 'aabd294d-e74e-4508-91b7-7361023390d2': []}
+Available auxiliary data: [[1, -1, -1], [0, -1, -1]]
+Available RS-encoded data: [(7, 6), (7, 6), (7, 6)]
+
+Queues that were restored:
+Primary structure `0` with structure identifier `3c7e4dee-ef07-4589-ada4-7cfdcdabddd9` was recovered: [6, 7]
+Primary structure `1` with structure identifier `5dbc0076-2c9e-44da-9b59-c3c0eaed2a21` was recovered: []
+Primary structure `2` with structure identifier `aabd294d-e74e-4508-91b7-7361023390d2` was recovered: []
+Data restoration complete...
+
+Stopping nodes...

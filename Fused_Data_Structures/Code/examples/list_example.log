@@ -1,0 +1,201 @@
+Starting nodes...
+Primary ports: [50000, 50001, 50002]
+Backup ports: [50003, 50004, 50005]
+
+Creating fault tolerant list cluster with identifier: b441ffbb-dd00-406d-8049-61248c71afa5
+Initializing primary list on primary node on port: 50000
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary list on primary node on port: 50001
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary list on primary node on port: 50002
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Creating fault tolerant list cluster with identifier: cc36913f-5772-47b6-8fe7-9822ed053c8a
+Initializing primary list on primary node on port: 50000
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary list on primary node on port: 50001
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Initializing primary list on primary node on port: 50002
+Initializing connections to backup nodes on ports: [50003, 50004, 50005]
+Primary node received mutation for structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=123
+
+Primary node sending mutation to backup servers for primary structure identifier 370f93eb-dfdd-4a9b-ba08-0178714d6c5d:
+Event=insert, Index=0, Value=123
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=123
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=123
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=123
+
+Primary node received mutation for structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=1, Value=456
+
+Primary node sending mutation to backup servers for primary structure identifier 370f93eb-dfdd-4a9b-ba08-0178714d6c5d:
+Event=insert, Index=1, Value=456
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=1, Value=456
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=1, Value=456
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=1, Value=456
+
+Primary node received mutation for structure f64506ce-3d27-4897-a73e-210bcaa3a27a in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=456
+
+Primary node sending mutation to backup servers for primary structure identifier f64506ce-3d27-4897-a73e-210bcaa3a27a:
+Event=insert, Index=0, Value=456
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=456
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=456
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=456
+
+Primary node received mutation for structure bb9317b2-3ce7-4f11-8129-896a402342e6 in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=789
+
+Primary node sending mutation to backup servers for primary structure identifier bb9317b2-3ce7-4f11-8129-896a402342e6:
+Event=insert, Index=0, Value=789
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=789
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=789
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=789
+
+Primary node received mutation for structure f64506ce-3d27-4897-a73e-210bcaa3a27a in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=555
+
+Primary node sending mutation to backup servers for primary structure identifier f64506ce-3d27-4897-a73e-210bcaa3a27a:
+Event=insert, Index=0, Value=555
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=555
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=555
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure f64506ce-3d27-4897-a73e-210bcaa3a27a within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=0, Value=555
+
+Primary node received mutation for structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=2, Value=789
+
+Primary node sending mutation to backup servers for primary structure identifier 370f93eb-dfdd-4a9b-ba08-0178714d6c5d:
+Event=insert, Index=2, Value=789
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=2, Value=789
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=2, Value=789
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure 370f93eb-dfdd-4a9b-ba08-0178714d6c5d within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=insert, Index=2, Value=789
+
+Primary node received mutation for structure 61fb1f78-9de9-432a-bfdd-458ef5203d3e in cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=111
+
+Primary node sending mutation to backup servers for primary structure identifier 61fb1f78-9de9-432a-bfdd-458ef5203d3e:
+Event=insert, Index=0, Value=111
+
+Backup node received mutation for structure 27abeac4-4ab9-4459-8f22-624318eb8aaf from primary structure 61fb1f78-9de9-432a-bfdd-458ef5203d3e within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=111
+
+Backup node received mutation for structure 82d5fef3-3e52-4d52-9b71-8ff9f6a771db from primary structure 61fb1f78-9de9-432a-bfdd-458ef5203d3e within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=111
+
+Backup node received mutation for structure 111f7e74-734d-48e6-9580-878759f1ae2f from primary structure 61fb1f78-9de9-432a-bfdd-458ef5203d3e within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=111
+
+Primary node received mutation for structure b99a36f2-3efa-4d43-ad41-3a710dd9861b in cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=222
+
+Primary node sending mutation to backup servers for primary structure identifier b99a36f2-3efa-4d43-ad41-3a710dd9861b:
+Event=insert, Index=0, Value=222
+
+Backup node received mutation for structure 27abeac4-4ab9-4459-8f22-624318eb8aaf from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=222
+
+Backup node received mutation for structure 82d5fef3-3e52-4d52-9b71-8ff9f6a771db from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=222
+
+Backup node received mutation for structure 111f7e74-734d-48e6-9580-878759f1ae2f from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=222
+
+Primary node received mutation for structure b99a36f2-3efa-4d43-ad41-3a710dd9861b in cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=333
+
+Primary node sending mutation to backup servers for primary structure identifier b99a36f2-3efa-4d43-ad41-3a710dd9861b:
+Event=insert, Index=0, Value=333
+
+Backup node received mutation for structure 27abeac4-4ab9-4459-8f22-624318eb8aaf from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=333
+
+Backup node received mutation for structure 82d5fef3-3e52-4d52-9b71-8ff9f6a771db from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=333
+
+Backup node received mutation for structure 111f7e74-734d-48e6-9580-878759f1ae2f from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=insert, Index=0, Value=333
+
+Retrieved value for list cluster `1`, primary list `0` at index `0`: 123
+
+Retrieved value for list cluster `1`, primary list `0` at index `0`: 456
+
+Retrieved value for list cluster `1`, primary list `0` at index `0`: 789
+
+Attempting to recreate original data for 3 faults on data points: {0, 1, 2}
+Available primary data: {'370f93eb-dfdd-4a9b-ba08-0178714d6c5d': [], 'f64506ce-3d27-4897-a73e-210bcaa3a27a': [], 'bb9317b2-3ce7-4f11-8129-896a402342e6': []}
+Available auxiliary data: [[0, 1, 0], [1, 0, -1], [2, -1, -1]]
+Available RS-encoded data: [(678, 995, 789), (41143, 37571, 789), (61441, 61955, 789)]
+
+Lists which were restored:
+Primary structure `0` with structure identifier `370f93eb-dfdd-4a9b-ba08-0178714d6c5d` was recovered: [123, 456, 789]
+Primary structure `1` with structure identifier `f64506ce-3d27-4897-a73e-210bcaa3a27a` was recovered: [555, 456]
+Primary structure `2` with structure identifier `bb9317b2-3ce7-4f11-8129-896a402342e6` was recovered: [789]
+Data restoration complete...
+
+Primary node received mutation for structure bb9317b2-3ce7-4f11-8129-896a402342e6 in cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=remove, Index=0
+
+Primary node sending mutation to backup servers for primary structure identifier bb9317b2-3ce7-4f11-8129-896a402342e6:
+Event=remove, Index=0, Value=789, ValueToReplaceWith=789
+
+Backup node received mutation for structure 84d37983-199b-437a-b4c7-69f3ffc7be85 from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=remove, Index=0, Value=789, ValueToReplaceWith=789
+
+Backup node received mutation for structure 5b01b3da-a708-45ff-aaee-e55c6349179c from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=remove, Index=0, Value=789, ValueToReplaceWith=789
+
+Backup node received mutation for structure 1cfd44a7-2855-491b-a99f-b30851126a1f from primary structure bb9317b2-3ce7-4f11-8129-896a402342e6 within cluster b441ffbb-dd00-406d-8049-61248c71afa5:
+Event=remove, Index=0, Value=789, ValueToReplaceWith=789
+
+Primary node received mutation for structure b99a36f2-3efa-4d43-ad41-3a710dd9861b in cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=remove, Index=1
+
+Primary node sending mutation to backup servers for primary structure identifier b99a36f2-3efa-4d43-ad41-3a710dd9861b:
+Event=remove, Index=1, Value=222, ValueToReplaceWith=333
+
+Backup node received mutation for structure 27abeac4-4ab9-4459-8f22-624318eb8aaf from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=remove, Index=1, Value=222, ValueToReplaceWith=333
+
+Backup node received mutation for structure 82d5fef3-3e52-4d52-9b71-8ff9f6a771db from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=remove, Index=1, Value=222, ValueToReplaceWith=333
+
+Backup node received mutation for structure 111f7e74-734d-48e6-9580-878759f1ae2f from primary structure b99a36f2-3efa-4d43-ad41-3a710dd9861b within cluster cc36913f-5772-47b6-8fe7-9822ed053c8a:
+Event=remove, Index=1, Value=222, ValueToReplaceWith=333
+
+Stopping nodes...

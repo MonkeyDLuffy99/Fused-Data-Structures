@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "cs347"
+version = "0.1.0"
+description = ""
+authors = ["Krishan Mistry <krishan@krishanmistry.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio-tools = "^1.44.0"
+grpcio = "^1.44.0"
+reedsolo = "^1.5.4"
+
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.2"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+mypy = "^0.930"
+pytest = "^6.2.5"
+isort = "^5.10.1"
+bandit = "^1.7.1"
+coverage = "^6.2"
+pre-commit = "^2.16.0"
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
